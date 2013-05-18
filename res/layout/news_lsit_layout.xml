@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            layout="@layout/news_detail_header" >
+        </include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/news_item_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:layout_below="@+id/header_layout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/news_xiaoyuanyaoxun"
+            style="@style/frame_button"
+            android:background="@drawable/frame_button_bg"
+            android:text="@string/xiaoyuankuaixun" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/frame_button_cutline" />
+
+        <Button
+            android:id="@+id/news_xidaxueren"
+            style="@style/frame_button"
+            android:background="@drawable/frame_button_bg"
+            android:text="@string/xidaxueren" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/frame_button_cutline" />
+
+        <Button
+            android:id="@+id/news_zhongyaozixun"
+            style="@style/frame_button"
+            android:background="@drawable/frame_button_bg"
+            android:text="@string/zhongyaozixun" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/frame_button_cutline" />
+
+        <Button
+            android:id="@+id/news_chengcaixida"
+            style="@style/frame_button"
+            android:background="@drawable/frame_button_bg"
+            android:text="@string/chengcaixida" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/frame_button_cutline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footbar_home"
+        android:layout_below="@+id/news_item_ly" >
+
+        <ListView
+            android:id="@+id/news_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footbar_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include
+            android:layout_width="match_parent"
+            layout="@layout/home_footbar" />
+    </LinearLayout>
+
+</RelativeLayout>

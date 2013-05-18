@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/woold_02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            layout="@layout/header_layout" >
+        </include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        style="@style/detail_cut_line"
+        android:layout_below="@+id/college_name"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1" >
+
+        <TextView
+            android:id="@+id/college_zhuanye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/app_name" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/college_home"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:text="@string/xueyaunzhuye" />
+
+    <TextView
+        android:id="@+id/college_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_layout"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textSize="22sp" />
+
+</RelativeLayout>
